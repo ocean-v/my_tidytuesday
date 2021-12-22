@@ -59,7 +59,7 @@ in each beverage are selected. Arrows and words show the original variables whic
 on to the principal components (the top eight words ranked by sqrt(PC1<sup>2</sup> + PC2<sup>2</sup>) are selected to show). <br></b>
 <br>
 Data from GitHub(PythonCoderUnicorn/starbucks), originally derived <br>
-&emsp; from the pdf *Starbucks Coffee Company* Beverage Nutrition Information; Image by @pat_macro"
+from the pdf *Starbucks Coffee Company* Beverage Nutrition Information; Image by @pat_macro"
 )
 
 
