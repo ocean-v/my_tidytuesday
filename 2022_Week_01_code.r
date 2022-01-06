@@ -4,6 +4,7 @@ library(sf)
 library(osmdata)
 library(showtext)
 library(ggtext)
+library(magick)
 
 
 # Loading font
@@ -101,5 +102,9 @@ result_plot <- ggplot() +
 
 
 # Saving as PNG (on Windows)
-ggsave(result_plot, file = "result_plot_2022_w01.png", width = 112, height = 112, units = "cm", dpi = 200)
+ggsave(result_plot, file = "tmp.png", width = 112, height = 112, units = "cm", dpi = 200)
 
+# Resizing for Twitter
+image <- image_read("tmp.png")
+image2 <- image_resize(image, "1000x1000")
+image_write(image2, "result_plot_2022_w01.png")
