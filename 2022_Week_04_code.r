@@ -32,12 +32,12 @@ full_join(ratings, details, by = "id") %>%
     (15 < playingtime)&(playingtime <= 30) ~ "15-30 min", 
     (30 < playingtime)&(playingtime <= 45) ~ "30-45 min", 
     (45 < playingtime)&(playingtime <= 60) ~ "45-60 min", 
-    (60 < playingtime)&(playingtime <= 90) ~ "1-1.5 hour", 
-    (90 < playingtime)&(playingtime <= 120) ~ "1.5-2 hour", 
-    (120 < playingtime)&(playingtime <= 150) ~ "2-2.5 hour", 
-    (150 < playingtime)&(playingtime <= 180) ~ "2.5-3 hour", 
-    (180 < playingtime)&(playingtime <= 240) ~ "3-4 hour", 
-    (240 < playingtime) ~ "over 4 hour", 
+    (60 < playingtime)&(playingtime <= 90) ~ "1-1.5 hours", 
+    (90 < playingtime)&(playingtime <= 120) ~ "1.5-2 hours", 
+    (120 < playingtime)&(playingtime <= 150) ~ "2-2.5 hours", 
+    (150 < playingtime)&(playingtime <= 180) ~ "2.5-3 hours", 
+    (180 < playingtime)&(playingtime <= 240) ~ "3-4 hours", 
+    (240 < playingtime) ~ "over 4 hours", 
     is.na(playingtime) ~ "No data"
   )) -> boardgame1
 
