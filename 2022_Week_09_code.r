@@ -58,15 +58,15 @@ stations2_sf <- stations2 %>%
 counter <- c("1970s", "1980s", "1990s", "2000s", "2010s", "2020s")
 
 stations2_sf_ref <- bind_rows(
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "BD"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "CNG"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "ELEC"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "E85"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "HY"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "LNG"), 1), 
-    slice(filter(stations2_sf, FUEL_TYPE_CODE == "LPG"), 1)
-  )
-    
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "BD"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "CNG"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "ELEC"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "E85"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "HY"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "LNG"), 1), 
+  slice(filter(stations2_sf, FUEL_TYPE_CODE == "LPG"), 1)
+)
+
 
 for (ii in counter) {
   
@@ -82,6 +82,7 @@ for (ii in counter) {
     coord_sf(xlim = st_bbox(stations2_sf)[c(1, 3)], ylim = st_bbox(stations2_sf)[c(2, 4)]) + 
     guides(color = guide_legend(title.position = "top", direction = "horizontal", ncol = 2, override.aes = list(size = 1.8))) + 
     theme(
+      axis.title = element_blank(), 
       axis.text = element_text(family = "PT Sans", color = "white", size = 45), 
       panel.background = element_rect(fill = "#393e4f"), 
       panel.grid.major = element_line(size = 0.1), 
@@ -104,6 +105,6 @@ for (ii in counter) {
 # Reading images & saving as GIF animation
 # reference: https://stackoverflow.com/questions/49612276/how-can-i-image-read-multiple-images-at-once
 image_names <- list.files(".", pattern = "g_[0-9]{4}s.png")
-images <- map(image_names, image_read) %>% image_join()
-image_animate(images, fps = 1, optimize = TRUE) %>% image_write("anime.gif")
-
+images <- map(image_names, image_read) %>% image_join() %>% image_resize("1800x960")
+anime <- image_animate(images, fps = 1, optimize = TRUE)
+image_write(anime, "anime.gif")
