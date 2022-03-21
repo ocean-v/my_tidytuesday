@@ -100,5 +100,7 @@ result_plot <- ggplot(data = bioc_cran) +
     legend.key = element_blank()
   )
 
+
+# Saving  image
 ggsave(result_plot, file = "result_plot.png", width = 14, height = 14, unit = "cm", dpi = 400)
 
