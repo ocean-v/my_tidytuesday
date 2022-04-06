@@ -18,7 +18,7 @@ sports <- tuesdata$sports
 # Preparing data
 sports2 <- sports %>% 
   group_by(year, classification_name) %>% 
-  summarise(n_sports = length(unique(sports)), total_ependiture = sum(total_exp_menwomen, na.rm = TRUE), total_revenue = sum(total_rev_menwomen, na.rm = TRUE)) %>% 
+  summarise(total_ependiture = sum(total_exp_menwomen, na.rm = TRUE), total_revenue = sum(total_rev_menwomen, na.rm = TRUE)) %>% 
   pivot_longer(cols = contains("total")) %>% 
   mutate(classification_name = factor(classification_name, levels = c("NCAA Division I-FBS", "NCAA Division I-FCS", "NCAA Division I without football", "NCAA Division II with football", "NCAA Division II without football", "NCAA Division III with football", "NCAA Division III without football", "NAIA Division I", "NAIA Division II", "NJCAA Division I", "NJCAA Division II", "NJCAA Division III", "NCCAA Division I", "NCCAA Division II", "USCAA", "CCCAA", "NWAC", "Independent", "Other")))
 
