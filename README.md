@@ -64,3 +64,7 @@
 ## 2022 Week13([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-03-29/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/2022_Week_13_code.r))
 
 ![](images/2022_week13_result_plot.png)
+
+## 2022 Week14([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-04-05/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/2022_Week_14_code.r))
+
+![](images/2022_week14_result_plot.png)
