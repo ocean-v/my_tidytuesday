@@ -3,16 +3,16 @@ title: "[@pat_macro](https://twitter.com/pat_macro)'s Tidytuesday plot"
 output: github_document
 ---
 
-## 2021 Week50([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-07/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/Week_50_code.r))
+## 2021 Week50([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-07/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2021/Week_50_code.r))
 ![](images/2021_week50_result_plot.png)
 
-## 2021 Week51([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-14/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/Week_51_code.r))
+## 2021 Week51([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-14/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2021/Week_51_code.r))
 ![](images/2021_week51_result_plot.png)
 
-## 2021 Week52([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-21/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/Week_52_code.r))
+## 2021 Week52([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2021/2021-12-21/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2021/Week_52_code.r))
 ![](images/2021_week52_result_plot.png)
 
-## 2022 Week01([data](), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2022_Week_01_code.r))
+## 2022 Week01([data](), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2021/2022_Week_01_code.r))
 ![](images/2022_week01_result_plot.png)
 
 ## 2022 Week02([data](https://github.com/rfordatascience/tidytuesday/blob/master/data/2022/2022-01-11/readme.md), [code](https://github.com/ocean-v/my_tidytuesday/blob/main/code/2022_Week_02_code.r))
